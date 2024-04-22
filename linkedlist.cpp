@@ -11,7 +11,6 @@ int main(){
 
 // node *one=(node*)malloc(10);
 node *head=NULL, *tail=NULL;
-node *arr[10];
 int count=0;
 for(int i=0;i<10;i++){
     count++;
@@ -30,12 +29,10 @@ for(int i=0;i<10;i++){
 }
 
 node *temp=head;
-while(temp->next!=NULL){
+while(temp!=NULL){
     cout<<temp->data<<endl;
     temp=temp->next;
 }
-
-cout<<"count:"<<count<<endl;
 
 
 

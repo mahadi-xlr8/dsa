@@ -25,8 +25,8 @@ int dequeue(){
 }
 int main(){
 
-    for(int i=1;i<11;i++)enqueue(i);
-    for(int i=0;i<10;i++){
+    for(int i=1;i<11;i++)enqueue(i*10);
+    for(int i=0;i<14;i++){
         cout<<dequeue()<<endl;
     }
 
